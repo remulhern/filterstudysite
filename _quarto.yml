@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: ./docs
+
+website:
+  title: "Does My Filter Work?"
+  navbar:
+    search: true
+        
+  page-footer: 
+    left: "Copyright 2026" 
+
+format:
+  html:
+    theme:
+      - journal
+      - custom.scss
+    #css: styles.css
+    toc: true
+
+editor: visual
+
