@@ -4,7 +4,7 @@ title: "Coming soon!"
 
 You've reached the landing page for a collaborative research study by the West Plains Water Coalition and the University of Colorado Boulder. The goal of this study is to help understand the real-world performance of household water filters for removing PFAS from private well water.
 
-**More info coming soon.** Sign up for updates on our progress [here](https://cuboulder.qualtrics.com/jfe/form/SV_5ooqynmJ3LoGIm2) or send an email to [filters\@westplainswater.org](filters@westplainswater.org).
+**More info coming soon.** Sign up for updates on our progress [here](https://cuboulder.qualtrics.com/jfe/form/SV_5ooqynmJ3LoGIm2) or send an email to [filters\@westplainswater.org](mailto:filters@westplainswater.org).
 
 ![](images/study_logo_horizontal_badge.png){fig-align="center"}
 
