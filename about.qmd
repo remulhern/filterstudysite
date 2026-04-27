@@ -1,3 +1,38 @@
 ---
 title: "About"
 ---
+
+The West Plains PFAS Filter study is a scientific research study sponsored by the Water Quality Research Foundation to understand the real-world performance of household water filters for PFAS.
+
+## Study Motivation
+
+-   The household water filter market is confusing! Many people aren’t sure which filters to buy and if they will be effective.
+-   Public health agencies often don’t have real world performance data to make recommendations.
+-   Filter users impacted by PFAS need assurance that filters are working to keep them safe.
+
+## Study Goals
+
+-   Provide confidence in using household water filters for PFAS in well water
+-   Identify if any problems exist with household filters for removing PFAS from well water
+-   Support public health agencies and other communities nationwide in making health protective recommendations and decisions for PFAS
+
+## Study Overview
+
+We will test both existing filters already installed in people’s homes (Phase 1), and newly installed filters in high-risk households (Phase 2).
+
++------------------------------+----------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                              | **Phase 1:** April to December 2026                                              | **Phase 2:** June 2026 to December 2028                                                                                                                      |
++------------------------------+----------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Overview**                 | -   Up to 60 households                                                          | -   12 households                                                                                                                                            |
+|                              | -   Diverse filter types                                                         | -   Select under-sink and whole house filters \|                                                                                                             |
+|                              | -   Samples taken only once                                                      | -   Samples taken at 3 time points                                                                                                                           |
++------------------------------+----------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Eligibility requirements** | -   Private well                                                                 | -   Private well                                                                                                                                             |
+|                              | -   Known PFAS problem of any amount with test result                            | -   Severe PFAS problem with test result                                                                                                                     |
+|                              | -   Have a household filter capable of removing PFAS already installed           | -   **No** whole house filter capable of removing PFAS already installed                                                                                     |
+|                              | -   Willing to collect water samples from your filter with a mail out sample kit | -   Willing to collect water samples from your filter at designated intervals for up to 3 years (depending on size of filter system and household water use) |
++------------------------------+----------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+: {.hover}
+
+**Note:** For Phase 2, filter products will be selected in coordination with West Plains Water Coalition, Spokane PFAS Task Force, and Washington Department of Health. This study is sponsored by the Water Quality Research Foundation and is **not** financed by any water filter companies.

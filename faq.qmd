@@ -1,0 +1,50 @@
+---
+title: "FAQ"
+---
+
+::: {.callout-note collapse="true" appearance="minimal"}
+## 1.	What’s the difference between POU and POE filters? 
+POU stands for “point of use.” These are filters that only treat water at a single tap (including different types like under-sink, countertop, and faucet-mount styles) or a single container (such as a pitcher filter or countertop gravity filter). POE stands for “point of entry.” These systems treat all the water in the house and are typically installed where the main water line enters the home or in an outbuilding near the well. 
+:::
+
+::: {.callout-note collapse="true" appearance="minimal"}
+## 2.	Does it matter what type of filter system I have to be able to enroll in the study?
+We will test both POU and POE filters in this study, but they must be designed to remove PFAS. Any filter type is eligible as long as it is expected to remove PFAS, including RO, activated carbon, resin, or other media. When you enroll in the study, we will send you an initial eligibility screening form that asks about your current filter type, including the brand and model, to determine if your filter meets the criteria. If you have a POE system, you will also need to have access to an unfiltered tap, such as a hose bib or spigot at the well, that bypasses or is upstream of the filter to be eligible to participate.
+:::
+
+::: {.callout-note collapse="true" appearance="minimal"}
+## 3.	Do I need a certified PFAS test?
+No, you do not need a certified water test to participate. We do ask that you have prior PFAS test results for your well water, but these results do not need to come from a certified laboratory.
+:::
+
+::: {.callout-note collapse="true" appearance="minimal"}
+## 4.	What’s the minimum level of PFAS in my water to participate?
+There is no strict minimum level required to participate, but households with higher PFAS levels may be prioritized.
+:::
+
+
+::: {.callout-note collapse="true" appearance="minimal"}
+## 5.	How soon will I get my results?
+We will return your results as soon as possible; however, the laboratory analysis process is complex, and timelines can vary. Because this is a research project, processing and analyzing samples may take some time. We ask that participants allow up to a couple of months to receive their results. We understand that this information is important and appreciate your patience while we ensure results are accurate and carefully processed.
+:::
+
+::: {.callout-note collapse="true" appearance="minimal"}
+## 6.	How do I collect my water samples? 
+You will collect samples from both a filtered and an unfiltered tap in your home. When you receive your sample kit, it will include step-by-step instructions and a link to an instructional video. It is important that you are able to identify a filtered and an unfiltered location in your home. 
+:::
+
+::: {.callout-note collapse="true" appearance="minimal"}
+## 7.	What will you do with my data? 
+Your privacy is very important to us. All personal information, survey responses, and test results will be stored securely by the University of Colorado Boulder. Research data will only accessible to authorized members of the research team. Your data will be de-identified, meaning your name and other identifying information will be removed from datasets used for analysis. Results will be reported in aggregate, and individual households will not be identified in any publications or presentations. We will not share your personal information with anyone outside the research team without your permission.
+:::
+
+::: {.callout-note collapse="true" appearance="minimal"}
+## 8.	Why is this study being conducted in the West Plains? 
+The combination of a long history of PFAS use, a large population of private well users, and a demand for household treatment products for PFAS across the West Plains creates a natural testbed for studying the effectiveness of household treatment for PFAS that can help communities nationwide facing similar challenges.
+:::
+
+::: {.callout-note collapse="true" appearance="minimal"}
+## 9.	How does your PFAS testing work?
+We will follow standard methods developed by the Environmental Protection Agency (the exact method we will use is EPA 1633). First, we take a water sample and concentrate it so that the PFAS are easier to detect. Then the extract is analyzed by a very sensitive instrument called a mass spectrometer that can separate and quantify each individual PFAS. 
+:::
+---

@@ -2,8 +2,64 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Coming soon!",
+    "title": "Welcome",
     "section": "",
-    "text": "You’ve reached the landing page for a collaborative research study by the West Plains Water Coalition and the University of Colorado Boulder. The goal of this study is to help understand the real-world performance of household water filters for removing PFAS from private well water.\nMore info coming soon. Sign up for updates on our progress here or send an email to filters@westplainswater.org."
+    "text": "You’ve reached the landing page for a collaborative research study by the West Plains Water Coalition and the University of Colorado Boulder. The goal of this study is to help understand the real-world performance of household water filters for removing PFAS from private well water.\nFor more info, click the links below:\n\n\n\n\n\n\n\nAbout\n\n\n\n\n\n\n\n\n\nEnroll\n\n\n\n\n\n\n\n\n\nFAQ\n\n\n\n\n\nNo matching items\n\nHave questions or want to follow our progress? Send us an email at filters@westplainswater.org."
+  },
+  {
+    "objectID": "enroll.html",
+    "href": "enroll.html",
+    "title": "Enroll",
+    "section": "",
+    "text": "Thanks for your interest in the West Plains PFAS Filter Study! Here’s the process to participate."
+  },
+  {
+    "objectID": "enroll.html#phase-1---60-households",
+    "href": "enroll.html#phase-1---60-households",
+    "title": "Enroll",
+    "section": "Phase 1 - 60 households",
+    "text": "Phase 1 - 60 households\nPhase 1 will test the effectiveness of 60 filters already installed in households on the West Plains. To enroll:\n\nFill out the eligibility screening form. This form will collect some initial information about your well and any existing water treatment systems in your home to determine if you are eligible. Our team will review the eligibility form and reach out to you for the formal enrollment process if your home fits the study criteria.\n\nWe are currently piloting our eligibility and enrollment intake forms with a small group of households. Check back soon.\n\n\n\n\nComplete the enrollment survey. If you are eligible to enroll, we will send you a link to a online survey. This survey will collect:\n\nYour formal agreement to participate in the study (consent).\nInformation about water use in your household\nInformation about your perceptions of PFAS contamination and the effectiveness of different responses.\n\nCollect water samples. Once we have your formal enrollment survey, we will send you a kit via FedEx with instructions to collect water samples from your filtered and unfiltered water. The kit will include a pre-paid return shipping label for you to mail the samples back to the University of Colorado Boulder."
+  },
+  {
+    "objectID": "enroll.html#phase-2---12-households",
+    "href": "enroll.html#phase-2---12-households",
+    "title": "Enroll",
+    "section": "Phase 2 - 12 households",
+    "text": "Phase 2 - 12 households\nPhase 2 will install new systems in 12 households with high PFAS levels and test them over time. To enroll:\n\nFill out the eligibility screening form. Same as above, this form will collect some initial information about your well and any existing water treatment systems in your home to determine if you are eligible. Our team will review the eligibility form and reach out to you for the formal enrollment process if your household fits the study criteria.\n\nScreening intake form coming soon.\n\nComplete the enrollment survey. If you are eligible to enroll, you will be sent a link to a online survey. This survey will collect:\n\nYour formal agreement to participate in the study (consent).\nInformation about water use in your household\nInformation about your perceptions of PFAS contamination and the effectiveness of different responses.\n\nSchedule filter install. Once we have your formal enrollment survey, we will coordinate with you to schedule a date to install a new filter system certified to remove PFAS in your home.\nCollect water samples. Once the new system is installed, we will send you a kit via FedEx with instructions to collect water samples from your filtered and unfiltered water on three different occasions. We will monitor the water use to know when to send you the sample kits based on the filter’s certified capacity. Each kit will include a pre-paid return shipping label for you to mail the samples back to the University of Colorado Boulder."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "The West Plains PFAS Filter study is a scientific research study sponsored by the Water Quality Research Foundation to understand the real-world performance of household water filters for PFAS."
+  },
+  {
+    "objectID": "about.html#study-motivation",
+    "href": "about.html#study-motivation",
+    "title": "About",
+    "section": "Study Motivation",
+    "text": "Study Motivation\n\nThe household water filter market is confusing! Many people aren’t sure which filters to buy and if they will be effective.\nPublic health agencies often don’t have real world performance data to make recommendations.\nFilter users impacted by PFAS need assurance that filters are working to keep them safe."
+  },
+  {
+    "objectID": "about.html#study-goals",
+    "href": "about.html#study-goals",
+    "title": "About",
+    "section": "Study Goals",
+    "text": "Study Goals\n\nProvide confidence in using household water filters for PFAS in well water\nIdentify if any problems exist with household filters for removing PFAS from well water\nSupport public health agencies and other communities nationwide in making health protective recommendations and decisions for PFAS"
+  },
+  {
+    "objectID": "about.html#study-overview",
+    "href": "about.html#study-overview",
+    "title": "About",
+    "section": "Study Overview",
+    "text": "Study Overview\nWe will test both existing filters already installed in people’s homes (Phase 1), and newly installed filters in high-risk households (Phase 2).\n\n\n\n\n\n\n\n\n\nPhase 1: April to December 2026\nPhase 2: June 2026 to December 2028\n\n\nOverview\n\nUp to 60 households\nDiverse filter types\nSamples taken only once\n\n\n12 households\nSelect under-sink and whole house filters |\nSamples taken at 3 time points\n\n\n\nEligibility requirements\n\nPrivate well\nKnown PFAS problem of any amount with test result\nHave a household filter capable of removing PFAS already installed\nWilling to collect water samples from your filter with a mail out sample kit\n\n\nPrivate well\nSevere PFAS problem with test result\nNo whole house filter capable of removing PFAS already installed\nWilling to collect water samples from your filter at designated intervals for up to 3 years (depending on size of filter system and household water use)\n\n\n\n\nNote: For Phase 2, filter products will be selected in coordination with West Plains Water Coalition, Spokane PFAS Task Force, and Washington Department of Health. This study is sponsored by the Water Quality Research Foundation and is not financed by any water filter companies."
+  },
+  {
+    "objectID": "faq.html",
+    "href": "faq.html",
+    "title": "FAQ",
+    "section": "",
+    "text": "Note1. What’s the difference between POU and POE filters?\n\n\n\n\n\nPOU stands for “point of use.” These are filters that only treat water at a single tap (including different types like under-sink, countertop, and faucet-mount styles) or a single container (such as a pitcher filter or countertop gravity filter). POE stands for “point of entry.” These systems treat all the water in the house and are typically installed where the main water line enters the home or in an outbuilding near the well.\n\n\n\n\n\n\n\n\n\nNote2. Does it matter what type of filter system I have to be able to enroll in the study?\n\n\n\n\n\nWe will test both POU and POE filters in this study, but they must be designed to remove PFAS. Any filter type is eligible as long as it is expected to remove PFAS, including RO, activated carbon, resin, or other media. When you enroll in the study, we will send you an initial eligibility screening form that asks about your current filter type, including the brand and model, to determine if your filter meets the criteria. If you have a POE system, you will also need to have access to an unfiltered tap, such as a hose bib or spigot at the well, that bypasses or is upstream of the filter to be eligible to participate.\n\n\n\n\n\n\n\n\n\nNote3. Do I need a certified PFAS test?\n\n\n\n\n\nNo, you do not need a certified water test to participate. We do ask that you have prior PFAS test results for your well water, but these results do not need to come from a certified laboratory.\n\n\n\n\n\n\n\n\n\nNote4. What’s the minimum level of PFAS in my water to participate?\n\n\n\n\n\nThere is no strict minimum level required to participate, but households with higher PFAS levels may be prioritized.\n\n\n\n\n\n\n\n\n\nNote5. How soon will I get my results?\n\n\n\n\n\nWe will return your results as soon as possible; however, the laboratory analysis process is complex, and timelines can vary. Because this is a research project, processing and analyzing samples may take some time. We ask that participants allow up to a couple of months to receive their results. We understand that this information is important and appreciate your patience while we ensure results are accurate and carefully processed.\n\n\n\n\n\n\n\n\n\nNote6. How do I collect my water samples?\n\n\n\n\n\nYou will collect samples from both a filtered and an unfiltered tap in your home. When you receive your sample kit, it will include step-by-step instructions and a link to an instructional video. It is important that you are able to identify a filtered and an unfiltered location in your home.\n\n\n\n\n\n\n\n\n\nNote7. What will you do with my data?\n\n\n\n\n\nYour privacy is very important to us. All personal information, survey responses, and test results will be stored securely by the University of Colorado Boulder. Research data will only accessible to authorized members of the research team. Your data will be de-identified, meaning your name and other identifying information will be removed from datasets used for analysis. Results will be reported in aggregate, and individual households will not be identified in any publications or presentations. We will not share your personal information with anyone outside the research team without your permission.\n\n\n\n\n\n\n\n\n\nNote8. Why is this study being conducted in the West Plains?\n\n\n\n\n\nThe combination of a long history of PFAS use, a large population of private well users, and a demand for household treatment products for PFAS across the West Plains creates a natural testbed for studying the effectiveness of household treatment for PFAS that can help communities nationwide facing similar challenges.\n\n\n\n\n\n\n\n\n\nNote9. How does your PFAS testing work?\n\n\n\n\n\nWe will follow standard methods developed by the Environmental Protection Agency (the exact method we will use is EPA 1633). First, we take a water sample and concentrate it so that the PFAS are easier to detect. Then the extract is analyzed by a very sensitive instrument called a mass spectrometer that can separate and quantify each individual PFAS."
   }
 ]

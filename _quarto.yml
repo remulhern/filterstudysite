@@ -3,13 +3,34 @@ project:
   output-dir: ./docs
 
 website:
-  title: "Home"
+  #title: "Home"
   navbar:
+    logo: images/study_logo_icon2.png
+    logo-href: index.qmd
+    left:
+      - href: index.qmd
+      - href: about.qmd
+      - href: enroll.qmd
+      - href: faq.qmd
     search: true
+    
+  announcement: 
+   icon: info-circle
+   dismissable: true
+   content: "**Now enrolling!** Sign up to participate and test your home PFAS filter's performance."
+   type: primary
+   position: below-navbar
         
   page-footer: 
-    left: "Copyright 2026" 
-
+    left: "Copyright 2026"
+    
+  body-footer: |
+    <div style="text-align: center;">
+      <img src="images/wpwc.jpg" height="30px">
+      <img src="images/cuboulder.png" height="30px">
+      <img src="images/wqrf.jpg" height="30px">
+    </div>
+  
 format:
   html:
     theme:

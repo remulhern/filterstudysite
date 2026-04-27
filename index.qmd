@@ -1,17 +1,20 @@
 ---
-title: "Coming soon!"
+title: "Welcome"
+listing:
+  id: site-contents
+  contents: 
+    - "*.qmd"  # Lists all .qmd files in the root folder    
+    - "!404.qmd"
+  type: grid          
+  fields: [title]     # Only shows the title, not date/description
 ---
+![](images/study_logo_horizontal.png){fig-align="center"}
 
 You've reached the landing page for a collaborative research study by the West Plains Water Coalition and the University of Colorado Boulder. The goal of this study is to help understand the real-world performance of household water filters for removing PFAS from private well water.
 
-**More info coming soon.** Sign up for updates on our progress [here](https://cuboulder.qualtrics.com/jfe/form/SV_5ooqynmJ3LoGIm2) or send an email to [filters\@westplainswater.org](mailto:filters@westplainswater.org).
+For more info, click the links below:
 
-![](images/study_logo_horizontal_badge.png){fig-align="center"}
-
-::: {layout-ncol="3"}
-![](images/cuboulder.png){fig-align="center"}
-
-![](images/wpwc.jpg){fig-align="center"}
-
-![](images/wqrf.jpg){fig-align="center"}
+::: {#site-contents}
 :::
+
+Have questions or want to follow our progress? Send us an email at [filters\@westplainswater.org](mailto:filters@westplainswater.org).
