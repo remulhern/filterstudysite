@@ -13,6 +13,7 @@ website:
       - href: enroll.qmd
       - href: faq.qmd
     search: true
+  google-analytics: "G-40JVHH6CFX"
     
   announcement: 
    icon: info-circle
