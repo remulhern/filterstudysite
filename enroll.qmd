@@ -10,9 +10,7 @@ Phase 1 will test the effectiveness of 60 filters already installed in household
 
 1.  **Fill out the eligibility screening form.** This form will collect some initial information about your well and any existing water treatment systems in your home to determine if you are eligible. Our team will review the eligibility form and reach out to you for the formal enrollment process if your home fits the study criteria.
 
-    -   **We are currently piloting our eligibility and enrollment intake forms with a small group of households. Check back soon.**
-
-<!-- -->
+    -   **Fill out the eligibility screening form [here](https://cuboulder.qualtrics.com/jfe/form/SV_eb5mSeDAYBKopQq).**
 
 2.  **Complete the enrollment survey.** If you are eligible to enroll, we will send you a link to a online survey. This survey will collect:
 
