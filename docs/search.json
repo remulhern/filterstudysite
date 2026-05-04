@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome",
-    "section": "",
-    "text": "You’ve reached the landing page for a collaborative research study by the West Plains Water Coalition and the University of Colorado Boulder. The goal of this study is to help understand the real-world performance of household water filters for removing PFAS from private well water.\nFor more info, click the links below:\n\n\n\n\n\n\n\nAbout\n\n\n\n\n\n\n\n\n\nEnroll\n\n\n\n\n\n\n\n\n\nFAQ\n\n\n\n\n\nNo matching items\n\nHave questions or want to follow our progress? Send us an email at filters@westplainswater.org."
-  },
-  {
     "objectID": "enroll.html",
     "href": "enroll.html",
     "title": "Enroll",
@@ -54,6 +47,13 @@
     "title": "About",
     "section": "Study Overview",
     "text": "Study Overview\nWe will test both existing filters already installed in people’s homes (Phase 1), and newly installed filters in high-risk households (Phase 2).\n\n\n\n\n\n\n\n\n\nPhase 1: April to December 2026\nPhase 2: June 2026 to December 2028\n\n\nOverview\n\nUp to 60 households\nDiverse filter types\nSamples taken only once\n\n\n12 households\nSelect under-sink and whole house filters |\nSamples taken at 3 time points\n\n\n\nEligibility requirements\n\nPrivate well\nKnown PFAS problem of any amount with test result\nHave a household filter capable of removing PFAS already installed\nWilling to collect water samples from your filter with a mail out sample kit\n\n\nPrivate well\nSevere PFAS problem with test result\nNo whole house filter capable of removing PFAS already installed\nWilling to collect water samples from your filter at designated intervals for up to 3 years (depending on size of filter system and household water use)\n\n\n\n\nNote: For Phase 2, filter products will be selected in coordination with West Plains Water Coalition, Spokane PFAS Task Force, and Washington Department of Health. This study is sponsored by the Water Quality Research Foundation and is not financed by any water filter companies."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "You’ve reached the landing page for a collaborative research study by the West Plains Water Coalition and the University of Colorado Boulder.\nThe goal of this study is to help understand the real-world performance of household water filters for removing PFAS from private well water.\nFor more info, click the links below:\n\n\n\n\n\n\n\nAbout\n\n\n\n\n\n\n\n\n\nEnroll\n\n\n\n\n\n\n\n\n\nFAQ\n\n\n\n\n\nNo matching items\n\nHave questions or want to follow our progress? Send us an email at filters@westplainswater.org."
   },
   {
     "objectID": "faq.html",

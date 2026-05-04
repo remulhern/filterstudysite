@@ -11,7 +11,9 @@ listing:
 
 ![](images/study_logo_horizontal.png){fig-align="center"}
 
-You've reached the landing page for a collaborative research study by the West Plains Water Coalition and the University of Colorado Boulder. The goal of this study is to help understand the real-world performance of household water filters for removing PFAS from private well water.
+You've reached the landing page for a collaborative research study by the West Plains Water Coalition and the University of Colorado Boulder.
+
+The goal of this study is to help understand the real-world performance of household water filters for removing PFAS from private well water.
 
 For more info, click the links below:
 
