@@ -21,7 +21,7 @@ The West Plains PFAS Filter study is a scientific research study sponsored by th
 We will test both existing filters already installed in people’s homes (Phase 1), and newly installed filters in high-risk households (Phase 2).
 
 +------------------------------+----------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                              | **Phase 1:** April to December 2026                                              | **Phase 2:** June 2026 to December 2028                                                                                                                      |
+|                              | **Phase 1:** April to December 2027                                              | **Phase 2:** June 2026 to December 2028                                                                                                                      |
 +------------------------------+----------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Overview**                 | -   Up to 60 households                                                          | -   12 households                                                                                                                                            |
 |                              | -   Diverse filter types                                                         | -   Select under-sink and whole house filters \|                                                                                                             |
@@ -35,4 +35,6 @@ We will test both existing filters already installed in people’s homes (Phase 
 
 : {.hover}
 
-**Note:** For Phase 2, filter products will be selected in coordination with West Plains Water Coalition, Spokane PFAS Task Force, and Washington Department of Health. This study is sponsored by the Water Quality Research Foundation and is **not** financed by any water filter companies.
+::: {.callout-note appearance="simple"}
+**Note:** For Phase 2, filter products were selected in coordination with West Plains Water Coalition, Spokane PFAS Task Force, and Washington Department of Health. This study is sponsored by the Water Quality Research Foundation and is **not** financed by any water filter companies.
+:::

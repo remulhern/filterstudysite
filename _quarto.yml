@@ -14,13 +14,14 @@ website:
       - href: about.qmd
       - href: enroll.qmd
       - href: faq.qmd
+      - href: results.qmd
     search: true
   google-analytics: "G-40JVHH6CFX"
     
   announcement: 
    icon: info-circle
    dismissable: true
-   content: "**Now enrolling!** Sign up to participate and test your home PFAS filter's performance."
+   content: "**Now enrolling!** Sign up to participate and test your home PFAS filter's performance. 30 slots remaining!"
    type: primary
    position: below-navbar
         

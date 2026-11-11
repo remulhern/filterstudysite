@@ -1,0 +1,163 @@
+---
+title: "Results"
+---
+
+**Last updated:** November 11, 2026
+
+::: {.callout-note appearance="simple"}
+### Key Takeaway
+
+Overall, certified PFAS filters effectively and consistently reduce PFAS in private well water, with some instances of breakthrough. We are continuing to investigate why and when breakthrough occurs in certified household PFAS filters, but the most effective way to protect your water quality is to ensure that your filter cartridge or filter media are replaced regularly, following the manufacturer's recommendations.
+
+To help us continue to understand PFAS filter effectiveness, consider enrolling your filter [here](enroll.qmd).
+:::
+
+To date we have completed testing for 19 households with certified PFAS filters across the West Plains. Our initial results for these 19 households for the six PFAS with current drinking water limits are shown below.
+
+These are aggregated, deidentified results for all participating households to date, including:
+
+-   All filter types (under-sink, countertop, whole house, etc.)
+-   All treatment technologies (resin, reverse osmosis, activated carbon, etc.)
+-   All durations of use (ranging from weeks to years)
+
+Hover over the graphs to explore the results and see exact concentration data compared to current WA allowable limits.
+
+```{r}
+#| label: preliminary_results
+#| echo: false
+#| message: false
+#| warning: false
+
+# Aggregate results reporting for website
+
+#### SET UP --------------------------------------------------------------------
+
+# Load packages 
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(ggthemes) # uses theme_clean
+library(ggiraph) # interactive plots
+library(stringr) # uses str_wrap
+
+# Set working directory - this standardizes the working directory across all EWL users
+user_id <- Sys.info()["user"]
+project_path <- "/UCB-O365/Equal Water Lab - Documents/Projects/WQRF - PFAS filter study/"
+dir <- paste0("C:/Users/", user_id, project_path)
+setwd(dir)
+
+cbPalette <- c("#E69F00","#56B4E9","#999999","#009E73", "#D55E00", "#CC79A7","#0072B2","#F0E442")
+
+#### IMPORT DATA ---------------------------------------------------------------
+
+sample_data_clean <- read.csv("03. Raw Data/R Script Processing Exports/sample_data_clean_2026-11-11.csv")
+
+#### PLOTTING ------------------------------------------------------------------
+
+regulated_pfas <- c("PFOA", "PFOS", "PFHxS", "PFNA", "PFBS")
+
+mcls <- tibble(pfas_name = c("PFOA", "PFOS", "PFHxS", "PFNA", "PFBS"),
+               mcl = c(4, 4, 10, 10, NA))
+
+# Average results
+average_viz <- sample_data_clean%>%
+  filter(pfas_name %in% regulated_pfas,
+         location != "FTW",
+         !grepl("_D", sample_id),
+         !grepl("P2", sample_id))%>%
+  mutate(c_sample = ifelse(c_sample < mrl_sample_ng.l, mrl_sample_ng.l/2, c_sample),
+         location = factor(location, levels = c("UW", "FW"),
+                           labels = c("Unfiltered water", "Filtered water")))%>%
+  group_by(pfas_name, location)%>%
+  summarize(average_c_sample = mean(c_sample))%>%
+  ggplot(aes(x = location, y = average_c_sample))+
+  geom_col_interactive(
+    width = 0.5,
+    aes(fill = location,
+        tooltip = paste("Average = ", round(average_c_sample), "ppt"),
+        data_id = location),
+    color = "black",
+    hover_nearest = TRUE)+
+  facet_wrap(~pfas_name, scales = "free")+
+  theme_clean()+
+  theme(legend.position = "none",
+        axis.title = element_text(face = "bold"),
+        strip.text = element_text(face = "bold"))+
+  labs(x = "Where the sample was collected from", y = "Average PFAS concentration (ppt)",
+       title = "Average PFAS concentration in filtered and unfiltered samples",
+       subtitle = "West Plains PFAS Filter Study | Last updated: November 11, 2026")+
+  scale_x_discrete(labels = function(location) str_wrap(location, width = 10))+
+  scale_fill_manual(values = cbPalette)+
+  geom_hline_interactive(data = mcls,
+                         aes(pfas_name = pfas_name,
+                             yintercept = mcl,
+                             tooltip = paste("WA allowable limit =", mcl, "ppt")),
+                         linetype = "dashed",
+                         color = "#CC79A7")
+
+girafe(average_viz,
+       options = list(opts_hover(css = "fill:#D55E00;"),
+                      opts_hover_inv(css = "opacity:0.1;")))
+
+# Individual data points
+individual_viz <- sample_data_clean%>%
+  filter(pfas_name %in% regulated_pfas,
+         location != "FTW",
+         !grepl("_D", sample_id),
+         !grepl("P2", sample_id))%>%
+  mutate(c_sample = ifelse(c_sample < mrl_sample_ng.l, mrl_sample_ng.l/2, c_sample), 
+         location = factor(location, levels = c("UW", "FW"),
+                           labels = c("Unfiltered water", "Filtered water")))%>%
+  ggplot(aes(x = location, y = c_sample))+
+  # geom_boxplot(outlier.shape = NA,
+  #              width = 0.5,
+  #              aes(fill = location),
+  #              alpha = 0.4)+
+  geom_line(color = "grey", 
+            alpha = 0.4,
+            linewidth = 0.3,
+            aes(group = household),
+            position = position_dodge(0.2))+
+  geom_jitter_interactive(#width = 0.1,
+    shape = 21,
+    size = 3,
+    aes(fill = location,
+        group = household, 
+        tooltip = paste(round(c_sample), "ppt"),
+        data_id = household),
+    color = "black",
+    position = position_dodge(0.2),
+    hover_nearest = TRUE)+
+  facet_wrap(~pfas_name, scales = "free")+
+  theme_clean()+
+  theme(legend.position = "none",
+        axis.title = element_text(face = "bold"),
+        strip.text = element_text(face = "bold"))+
+  labs(x = "Where the sample was collected from", y = "PFAS concentration (ppt)",
+       title = "PFAS concentrations in filtered and unfiltered samples by household",
+       subtitle = "West Plains PFAS Filter Study | Last updated: November 11, 2026")+
+  scale_x_discrete(labels = function(location) str_wrap(location, width = 10))+
+  scale_fill_manual(values = cbPalette)+
+  geom_hline_interactive(data = mcls,
+                         aes(pfas_name = pfas_name,
+                             yintercept = mcl,
+                             tooltip = paste("WA allowable limit =", mcl, "ppt")),
+                         linetype = "dashed",
+                         color = "#CC79A7")
+
+girafe(individual_viz,
+       options = list(opts_hover(css = "fill:#D55E00;"),
+                      opts_hover_inv(css = "opacity:0.1;")))
+
+
+```
+
+::: {.callout-important appearance="simple"}
+### Preliminary Research Results Disclaimer
+
+These research findings are preliminary and have not yet undergone formal scientific peer review. They are shared publicly in the interest of transparency and timely communication with participating households and the broader community. Our goal is to support informed decision-making and increase awareness of strategies to reduce PFAS exposure through private well water.
+
+These findings are subject to revision as additional data are collected, analyzed, and reviewed. They should not be considered definitive conclusions or interpreted as independent certification, endorsement, or verification of the performance of any commercial water treatment product by the research team or the University of Colorado Boulder.
+
+*Preliminary results — Updated November 2026*
+:::
