@@ -1,5 +1,6 @@
 ---
 title: "Preliminary Results"
+pagetitle: "Results"
 ---
 
 **Last updated:** November 11, 2026

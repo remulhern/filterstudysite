@@ -10,11 +10,13 @@ website:
     logo: images/study_logo_icon2.png
     logo-href: index.qmd
     left:
-      - href: index.qmd
+      - text: "Home"
+        href: index.qmd
       - href: about.qmd
       - href: enroll.qmd
       - href: faq.qmd
-      - href: results.qmd
+      - text: "Results"
+        href: results.qmd
     search: true
   google-analytics: "G-40JVHH6CFX"
     
