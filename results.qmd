@@ -1,5 +1,5 @@
 ---
-title: "Results"
+title: "Preliminary Results"
 ---
 
 **Last updated:** November 11, 2026
@@ -7,7 +7,7 @@ title: "Results"
 ::: {.callout-note appearance="simple"}
 ### Key Takeaway
 
-Overall, certified PFAS filters effectively and consistently reduce PFAS in private well water, with some instances of breakthrough. We are continuing to investigate why and when breakthrough occurs in certified household PFAS filters, but the most effective way to protect your water quality is to ensure that your filter cartridge or filter media are replaced regularly, following the manufacturer's recommendations.
+Household PFAS filters certified to NSF/ANSI 53 effectively and consistently reduce PFAS in private well water, but some instances of breakthrough have been found. We are continuing to investigate why and when breakthrough occurs in certified household PFAS filters, but the most effective way to protect your water quality is to ensure that your filter cartridge or filter media are replaced regularly, following the manufacturer's recommendations.
 
 To help us continue to understand PFAS filter effectiveness, consider enrolling your filter [here](enroll.qmd).
 :::
@@ -20,15 +20,25 @@ These are aggregated, deidentified results for all participating households to d
 -   All treatment technologies (resin, reverse osmosis, activated carbon, etc.)
 -   All durations of use (ranging from weeks to years)
 
-Hover over the graphs to explore the results and see exact concentration data compared to current WA allowable limits.
+Hover over the graphs to explore the results and see exact concentration data compared to current WA allowable limits for public drinking water utilities.
+
+```{r}
+#| label: setup
+#| include: false
+
+user_id <- Sys.info()["user"]
+project_path <- "/UCB-O365/Equal Water Lab - Documents/Projects/WQRF - PFAS filter study/"
+dir <- paste0("C:/Users/", user_id, project_path)
+
+knitr::opts_knit$set(root.dir = dir)
+```
+
 
 ```{r}
 #| label: preliminary_results
 #| echo: false
 #| message: false
 #| warning: false
-
-# Aggregate results reporting for website
 
 #### SET UP --------------------------------------------------------------------
 
@@ -39,12 +49,7 @@ library(ggplot2)
 library(ggthemes) # uses theme_clean
 library(ggiraph) # interactive plots
 library(stringr) # uses str_wrap
-
-# Set working directory - this standardizes the working directory across all EWL users
-user_id <- Sys.info()["user"]
-project_path <- "/UCB-O365/Equal Water Lab - Documents/Projects/WQRF - PFAS filter study/"
-dir <- paste0("C:/Users/", user_id, project_path)
-setwd(dir)
+library(forcats) #uses fct_rev
 
 cbPalette <- c("#E69F00","#56B4E9","#999999","#009E73", "#D55E00", "#CC79A7","#0072B2","#F0E442")
 
@@ -54,10 +59,13 @@ sample_data_clean <- read.csv("03. Raw Data/R Script Processing Exports/sample_d
 
 #### PLOTTING ------------------------------------------------------------------
 
-regulated_pfas <- c("PFOA", "PFOS", "PFHxS", "PFNA", "PFBS")
+regulated_pfas <- c("PFOS", "PFOA", "PFHxS", "PFNA", "PFBS", "HFPO-DA")
 
-mcls <- tibble(pfas_name = c("PFOA", "PFOS", "PFHxS", "PFNA", "PFBS"),
-               mcl = c(4, 4, 10, 10, NA))
+mcls <- tibble(pfas_name = factor(c("PFOS", "PFOA", "PFHxS", "PFNA", "PFBS", "HFPO-DA")),
+               mcl = c(4, 4, 10, 10, NA, 10))
+
+annotation <- tibble(pfas_name = factor(c("PFOS", "PFOA", "PFHxS", "PFNA", "PFBS", "HFPO-DA")),
+                     annotation = c("", "", "", "", "", "HFPO-DA was not detected in any samples to date."))
 
 # Average results
 average_viz <- sample_data_clean%>%
@@ -66,10 +74,12 @@ average_viz <- sample_data_clean%>%
          !grepl("_D", sample_id),
          !grepl("P2", sample_id))%>%
   mutate(c_sample = ifelse(c_sample < mrl_sample_ng.l, mrl_sample_ng.l/2, c_sample),
+         c_sample = ifelse(pfas_name == "HFPO-DA", NA, c_sample),
          location = factor(location, levels = c("UW", "FW"),
                            labels = c("Unfiltered water", "Filtered water")))%>%
   group_by(pfas_name, location)%>%
   summarize(average_c_sample = mean(c_sample))%>%
+  mutate(pfas_name = factor(pfas_name))%>%
   ggplot(aes(x = location, y = average_c_sample))+
   geom_col_interactive(
     width = 0.5,
@@ -78,7 +88,7 @@ average_viz <- sample_data_clean%>%
         data_id = location),
     color = "black",
     hover_nearest = TRUE)+
-  facet_wrap(~pfas_name, scales = "free")+
+  facet_wrap(~fct_rev(pfas_name), scales = "free")+
   theme_clean()+
   theme(legend.position = "none",
         axis.title = element_text(face = "bold"),
@@ -93,7 +103,12 @@ average_viz <- sample_data_clean%>%
                              yintercept = mcl,
                              tooltip = paste("WA allowable limit =", mcl, "ppt")),
                          linetype = "dashed",
-                         color = "#CC79A7")
+                         color = "#CC79A7")+
+  geom_text(data = annotation,
+            aes(x = 1.5, 
+                y = 5,
+                label = str_wrap(annotation, 15)),
+            size = 3)
 
 girafe(average_viz,
        options = list(opts_hover(css = "fill:#D55E00;"),
@@ -106,6 +121,7 @@ individual_viz <- sample_data_clean%>%
          !grepl("_D", sample_id),
          !grepl("P2", sample_id))%>%
   mutate(c_sample = ifelse(c_sample < mrl_sample_ng.l, mrl_sample_ng.l/2, c_sample), 
+         c_sample = ifelse(pfas_name == "HFPO-DA", NA, c_sample),
          location = factor(location, levels = c("UW", "FW"),
                            labels = c("Unfiltered water", "Filtered water")))%>%
   ggplot(aes(x = location, y = c_sample))+
@@ -128,7 +144,7 @@ individual_viz <- sample_data_clean%>%
     color = "black",
     position = position_dodge(0.2),
     hover_nearest = TRUE)+
-  facet_wrap(~pfas_name, scales = "free")+
+  facet_wrap(~fct_rev(pfas_name), scales = "free")+
   theme_clean()+
   theme(legend.position = "none",
         axis.title = element_text(face = "bold"),
@@ -143,7 +159,12 @@ individual_viz <- sample_data_clean%>%
                              yintercept = mcl,
                              tooltip = paste("WA allowable limit =", mcl, "ppt")),
                          linetype = "dashed",
-                         color = "#CC79A7")
+                         color = "#CC79A7")+
+    geom_text(data = annotation,
+            aes(x = 1.5, 
+                y = 10,
+                label = str_wrap(annotation, 15)),
+            size = 3)
 
 girafe(individual_viz,
        options = list(opts_hover(css = "fill:#D55E00;"),
