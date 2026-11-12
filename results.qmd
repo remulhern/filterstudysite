@@ -3,7 +3,7 @@ title: "Preliminary Results"
 pagetitle: "Results"
 ---
 
-**Last updated:** November 11, 2026
+**Last updated:** November 12, 2026
 
 ::: {.callout-note appearance="simple"}
 ### Key Takeaway
@@ -13,7 +13,7 @@ Household PFAS filters certified to NSF/ANSI 53 effectively and consistently red
 To help us continue to understand PFAS filter effectiveness, consider enrolling your filter [here](enroll.qmd).
 :::
 
-To date we have completed testing for 19 households with certified PFAS filters across the West Plains. Our initial results for these 19 households for the six PFAS with current drinking water limits are shown below.
+To date we have completed testing for **24 households** with certified PFAS filters across the West Plains. Our initial results for these 24 households for the six PFAS with current drinking water limits are shown below.
 
 These are aggregated, deidentified results for all participating households to date, including:
 
@@ -56,7 +56,7 @@ cbPalette <- c("#E69F00","#56B4E9","#999999","#009E73", "#D55E00", "#CC79A7","#0
 
 #### IMPORT DATA ---------------------------------------------------------------
 
-sample_data_clean <- read.csv("03. Raw Data/R Script Processing Exports/sample_data_clean_2026-11-11.csv")
+sample_data_clean <- read.csv("03. Raw Data/R Script Processing Exports/sample_data_clean_2026-11-12.csv")
 
 #### PLOTTING ------------------------------------------------------------------
 
